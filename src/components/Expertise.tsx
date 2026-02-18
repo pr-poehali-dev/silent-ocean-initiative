@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Heart, Building2, PartyPopper, Mic } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Свадьбы",
+    description: "Организуем свадьбы мечты — от камерных церемоний до масштабных торжеств. Продумаем каждую деталь вашего особенного дня.",
+    icon: Heart,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Корпоративные события",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Тимбилдинги, конференции, гала-ужины и новогодние вечеринки. Создаём мероприятия, которые укрепляют команду и впечатляют партнёров.",
+    icon: Building2,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Частные торжества",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Дни рождения, юбилеи, выпускные и тематические вечеринки. Превращаем ваши идеи в незабываемый праздник.",
+    icon: PartyPopper,
   },
   {
-    title: "Градостроительство",
+    title: "Деловые мероприятия",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Презентации, пресс-конференции, запуск продуктов и бизнес-завтраки. Профессиональная организация с вниманием к имиджу.",
+    icon: Mic,
   },
 ]
 
@@ -59,12 +59,12 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Форматы</HighlightedText>, которые
             <br />
-            практикой
+            вдохновляют
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Более 500 успешных мероприятий. Мы знаем, как сделать каждое событие особенным — от концепции до последнего танца.
           </p>
         </div>
 
