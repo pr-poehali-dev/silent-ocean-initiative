@@ -4,10 +4,10 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Свадьба на берегу Тихого океана",
-    category: "Свадьба",
-    location: "Камчатка, Халактырский пляж",
-    year: "2024",
+    title: "Юбилей холдинга Агротек 30 лет",
+    category: "Корпоратив",
+    location: "Проведение и организация",
+    year: "2025",
     image: "/images/hously-1.png",
   },
   {
