@@ -1,9 +1,13 @@
 import { useState, useEffect, MouseEvent } from "react"
+import { useLocation } from "react-router-dom"
 import { cn } from "../lib/utils"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const location = useLocation()
+  const isHome = location.pathname === "/"
+  const prefix = isHome ? "" : "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +54,7 @@ export function Header() {
           ].map((item) => (
             <li key={item.label}>
               <a
-                href={item.href}
+                href={`${prefix}${item.href}`}
                 className="hover:text-[rgb(251,146,60)] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-[rgb(251,146,60)] after:transition-all after:duration-300 text-white"
               >
                 {item.label}
@@ -108,7 +112,7 @@ export function Header() {
             ].map((item) => (
               <li key={item.label}>
                 <a
-                  href={item.href}
+                  href={`${prefix}${item.href}`}
                   className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-4xl font-light block"
                   onClick={closeMobileMenu}
                 >
