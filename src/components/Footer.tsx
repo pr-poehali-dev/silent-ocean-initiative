@@ -48,9 +48,7 @@ export function Footer() {
             <h4 className="text-sm font-medium mb-4">Связь</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:hello@event-agency.ru" className="hover:text-foreground transition-colors">
-                  hello@event-agency.ru
-                </a>
+                <a href="mailto:hello@event-agency.ru" className="hover:text-foreground transition-colors"></a>
               </li>
               <li>
                 <a href="tel:+79146210294" className="hover:text-foreground transition-colors">
