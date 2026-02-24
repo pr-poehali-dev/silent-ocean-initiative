@@ -11,9 +11,7 @@ export function Footer() {
                 <span className="font-semibold tracking-wide text-sm">Kamchatka People</span>
               </div>
             </a>
-            <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Организуем события, которые запоминаются навсегда. Свадьбы, корпоративы и праздники любого масштаба.
-            </p>
+            <p className="text-muted-foreground leading-relaxed max-w-sm">Организуем события, которые запоминаются навсегда. Корпаративные мероприятия и свадьбы под ключ, с возможностью организации на вулкане, корпоративы и праздники любого масштаба.</p>
           </div>
 
           {/* Navigation */}
