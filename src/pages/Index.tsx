@@ -1,6 +1,7 @@
 import { Header } from "../components/Header"
 import { Hero } from "../components/Hero"
 import { Philosophy } from "../components/Philosophy"
+import { LaraAbout } from "../components/LaraAbout"
 import { Projects } from "../components/Projects"
 import { VideoGallery } from "../components/VideoGallery"
 import { Expertise } from "../components/Expertise"
@@ -14,6 +15,7 @@ export default function Index() {
       <Header />
       <Hero />
       <Philosophy />
+      <LaraAbout />
       <Projects />
       <VideoGallery />
       <Expertise />
