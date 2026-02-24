@@ -62,8 +62,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-foreground transition-colors">
-                  ВКонтакте
-                </a>
+</a>
               </li>
             </ul>
           </div>
