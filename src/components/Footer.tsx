@@ -58,8 +58,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Телеграм
+                <a href="https://t.me/LaraDamanskaya" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Telegram
                 </a>
               </li>
               <li>
