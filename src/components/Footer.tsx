@@ -6,7 +6,10 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+              <div className="flex items-center gap-2">
+                <img src="https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/files/a6388ed2-01a2-4b08-a634-04d27eaba9df.jpg" alt="Kamchatka People" className="w-auto h-8 object-contain" />
+                <span className="font-semibold tracking-wide text-sm">Kamchatka People</span>
+              </div>
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Организуем события, которые запоминаются навсегда. Свадьбы, корпоративы и праздники любого масштаба.
@@ -70,7 +73,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Event-агентство. Все права защищены.</p>
+          <p>© 2025 Kamchatka People. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">
               Политика конфиденциальности
