@@ -61,8 +61,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-</a>
+                <a href="https://www.instagram.com/lara_damanskaya_kamchatka?igsh=MTJ3cGU4MXp6YTM2" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
