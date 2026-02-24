@@ -10,6 +10,9 @@ const projects = [
     year: "2025",
     images: [
       "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/9ddcbb27-c323-42f0-8201-a4c6bdf4a111.png",
+      "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/61147eb5-b0bb-459c-a096-7ea822a5c275.png",
+      "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/df838998-b9e0-4f54-a969-86f343ddc9b4.png",
+      "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/7e9e32c1-bdb3-482f-88ac-395d0a80d8eb.png",
     ],
   },
   {
