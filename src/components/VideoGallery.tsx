@@ -1,35 +1,22 @@
 import { useState } from "react"
 
+const PLACEHOLDER_IMG = "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/files/d827f607-f40a-4fc7-84b2-a4072006bfae.jpg"
+
 const videos = [
-  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", title: "Видео 1" },
-  { id: 2, embedUrl: "", title: "Видео 2" },
-  { id: 3, embedUrl: "", title: "Видео 3" },
-  { id: 4, embedUrl: "", title: "Видео 4" },
-  { id: 5, embedUrl: "", title: "Видео 5" },
-  { id: 6, embedUrl: "", title: "Видео 6" },
+  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", preview: PLACEHOLDER_IMG, title: "Видео 1" },
+  { id: 2, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 2" },
+  { id: 3, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 3" },
+  { id: 4, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 4" },
+  { id: 5, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 5" },
+  { id: 6, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 6" },
 ]
 
-function VideoCard({ embedUrl, title }: { embedUrl: string; title: string }) {
+function VideoCard({ embedUrl, preview, title }: { embedUrl: string; preview: string; title: string }) {
   const [playing, setPlaying] = useState(false)
-
-  if (!embedUrl) {
-    return (
-      <div className="relative overflow-hidden aspect-video bg-secondary rounded-sm flex items-center justify-center">
-        <div className="text-center text-muted-foreground">
-          <div className="w-12 h-12 border border-muted-foreground/30 rounded-full flex items-center justify-center mx-auto mb-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-          </div>
-          <p className="text-sm">{title}</p>
-        </div>
-      </div>
-    )
-  }
 
   return (
     <div className="relative overflow-hidden aspect-video bg-secondary rounded-sm">
-      {playing ? (
+      {playing && embedUrl ? (
         <iframe
           src={`${embedUrl}&autoplay=1`}
           className="w-full h-full"
@@ -38,14 +25,18 @@ function VideoCard({ embedUrl, title }: { embedUrl: string; title: string }) {
         />
       ) : (
         <button
-          onClick={() => setPlaying(true)}
-          className="w-full h-full flex items-center justify-center group bg-black/80 hover:bg-black/70 transition-colors"
+          onClick={() => embedUrl && setPlaying(true)}
+          className={`w-full h-full relative flex items-center justify-center group ${!embedUrl ? "cursor-default" : "cursor-pointer"}`}
         >
-          <div className="w-16 h-16 bg-white/10 border border-white/30 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-          </div>
+          <img src={preview} alt={title} className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
+          {embedUrl && (
+            <div className="relative w-16 h-16 bg-white/10 border border-white/40 rounded-full flex items-center justify-center group-hover:bg-white/25 transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          )}
         </button>
       )}
     </div>
@@ -63,7 +54,7 @@ export function VideoGallery() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {videos.map((video) => (
-            <VideoCard key={video.id} embedUrl={video.embedUrl} title={video.title} />
+            <VideoCard key={video.id} embedUrl={video.embedUrl} preview={video.preview} title={video.title} />
           ))}
         </div>
       </div>
