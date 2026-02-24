@@ -3,6 +3,11 @@ import { HighlightedText } from "./HighlightedText"
 
 const photos: string[] = [
   "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/10c9f431-ae7e-4512-8bae-1ad944ea0656.jpg",
+  "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/00db24b9-1d57-4dcb-bb86-f48a6ce2db85.jpg",
+  "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/93d23573-09b9-4db2-b887-f14e1a26f7ad.jpg",
+  "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/887e9b1e-9a07-4940-8e7d-7c3186d5bedf.jpg",
+  "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/64a9bc53-bdc5-434c-93a7-4fa09178e9eb.jpg",
+  "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/afa5cc32-ae98-4a68-8859-d7b381cf8b16.jpg",
 ]
 
 const bullets = [
