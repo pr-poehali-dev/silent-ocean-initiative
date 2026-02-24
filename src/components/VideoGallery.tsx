@@ -1,51 +1,21 @@
-import { useEffect, useRef, useState } from "react"
-
 const videos = [
-  { id: 1, src: "", title: "Видео 1" },
-  { id: 2, src: "", title: "Видео 2" },
-  { id: 3, src: "", title: "Видео 3" },
-  { id: 4, src: "", title: "Видео 4" },
-  { id: 5, src: "", title: "Видео 5" },
-  { id: 6, src: "", title: "Видео 6" },
+  { id: 1, driveId: "12Bu1Fn5fmoEH0ANLG8jnb2oQHifVWIdK", title: "Видео 1" },
+  { id: 2, driveId: "", title: "Видео 2" },
+  { id: 3, driveId: "", title: "Видео 3" },
+  { id: 4, driveId: "", title: "Видео 4" },
+  { id: 5, driveId: "", title: "Видео 5" },
+  { id: 6, driveId: "", title: "Видео 6" },
 ]
 
-function VideoCard({ src, title }: { src: string; title: string }) {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const containerRef = useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting)
-        if (videoRef.current) {
-          if (entry.isIntersecting) {
-            videoRef.current.play().catch(() => {})
-          } else {
-            videoRef.current.pause()
-          }
-        }
-      },
-      { threshold: 0.5 },
-    )
-
-    if (containerRef.current) observer.observe(containerRef.current)
-    return () => observer.disconnect()
-  }, [])
-
+function VideoCard({ driveId, title }: { driveId: string; title: string }) {
   return (
-    <div
-      ref={containerRef}
-      className="relative overflow-hidden aspect-video bg-secondary rounded-sm group"
-    >
-      {src ? (
-        <video
-          ref={videoRef}
-          src={src}
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+    <div className="relative overflow-hidden aspect-video bg-secondary rounded-sm group">
+      {driveId ? (
+        <iframe
+          src={`https://drive.google.com/file/d/${driveId}/preview`}
+          className="w-full h-full"
+          allow="autoplay"
+          allowFullScreen
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-secondary">
@@ -59,9 +29,6 @@ function VideoCard({ src, title }: { src: string; title: string }) {
           </div>
         </div>
       )}
-      <div
-        className={`absolute inset-0 bg-black/20 transition-opacity duration-300 ${isVisible ? "opacity-0" : "opacity-100"}`}
-      />
     </div>
   )
 }
@@ -77,7 +44,7 @@ export function VideoGallery() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {videos.map((video) => (
-            <VideoCard key={video.id} src={video.src} title={video.title} />
+            <VideoCard key={video.id} driveId={video.driveId} title={video.title} />
           ))}
         </div>
       </div>
