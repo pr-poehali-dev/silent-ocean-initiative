@@ -1,7 +1,9 @@
 import { useState } from "react"
 import { HighlightedText } from "./HighlightedText"
 
-const photos: string[] = []
+const photos: string[] = [
+  "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/10c9f431-ae7e-4512-8bae-1ad944ea0656.jpg",
+]
 
 const bullets = [
   "В моём арсенале мероприятия всех форматов!",
