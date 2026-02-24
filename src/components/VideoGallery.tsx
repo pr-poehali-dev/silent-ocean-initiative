@@ -1,20 +1,20 @@
 const videos = [
-  { id: 1, driveId: "12Bu1Fn5fmoEH0ANLG8jnb2oQHifVWIdK", title: "Видео 1" },
-  { id: 2, driveId: "", title: "Видео 2" },
-  { id: 3, driveId: "", title: "Видео 3" },
-  { id: 4, driveId: "", title: "Видео 4" },
-  { id: 5, driveId: "", title: "Видео 5" },
-  { id: 6, driveId: "", title: "Видео 6" },
+  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", title: "Видео 1" },
+  { id: 2, embedUrl: "", title: "Видео 2" },
+  { id: 3, embedUrl: "", title: "Видео 3" },
+  { id: 4, embedUrl: "", title: "Видео 4" },
+  { id: 5, embedUrl: "", title: "Видео 5" },
+  { id: 6, embedUrl: "", title: "Видео 6" },
 ]
 
-function VideoCard({ driveId, title }: { driveId: string; title: string }) {
+function VideoCard({ embedUrl, title }: { embedUrl: string; title: string }) {
   return (
-    <div className="relative overflow-hidden aspect-video bg-secondary rounded-sm group">
-      {driveId ? (
+    <div className="relative overflow-hidden aspect-video bg-secondary rounded-sm">
+      {embedUrl ? (
         <iframe
-          src={`https://drive.google.com/file/d/${driveId}/preview`}
+          src={embedUrl}
           className="w-full h-full"
-          allow="autoplay"
+          allow="clipboard-write; autoplay"
           allowFullScreen
         />
       ) : (
@@ -44,7 +44,7 @@ export function VideoGallery() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {videos.map((video) => (
-            <VideoCard key={video.id} driveId={video.driveId} title={video.title} />
+            <VideoCard key={video.id} embedUrl={video.embedUrl} title={video.title} />
           ))}
         </div>
       </div>
