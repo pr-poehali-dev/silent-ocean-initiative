@@ -205,3 +205,421 @@ Emitted 'error' event on FSWatcher instance at:
 }
 
 Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 546 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/public/images/hously-logo.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/public/images/hously-logo.svg',
+  filename: '/app/webapp/public/images/hously-logo.svg'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 689 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/tailwind.config.ts'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/tailwind.config.ts',
+  filename: '/app/webapp/tailwind.config.ts'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 511 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/4ff99721125a652ef229455f8d7c3eee4f726464/f6515'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleDir (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43218:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43268:16)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/4ff99721125a652ef229455f8d7c3eee4f726464/f6515',
+  filename: '/app/webapp/builds/4ff99721125a652ef229455f8d7c3eee4f726464/f6515'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 518 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/3c609d5bebe61ceaeddf4f2383d77e1f82b362a5/bb0f3/robots.txt'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/3c609d5bebe61ceaeddf4f2383d77e1f82b362a5/bb0f3/robots.txt',
+  filename: '/app/webapp/builds/3c609d5bebe61ceaeddf4f2383d77e1f82b362a5/bb0f3/robots.txt'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 545 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/8e03af45ed1a992cf13005353cd8f80e79790a5d/0872c/robots.txt'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/8e03af45ed1a992cf13005353cd8f80e79790a5d/0872c/robots.txt',
+  filename: '/app/webapp/builds/8e03af45ed1a992cf13005353cd8f80e79790a5d/0872c/robots.txt'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 574 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/8e03af45ed1a992cf13005353cd8f80e79790a5d/0872c/favicon.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/8e03af45ed1a992cf13005353cd8f80e79790a5d/0872c/favicon.svg',
+  filename: '/app/webapp/builds/8e03af45ed1a992cf13005353cd8f80e79790a5d/0872c/favicon.svg'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 601 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/810e99406900243e3ac32d3087be93c3da03155e/cb75d/placeholder.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/810e99406900243e3ac32d3087be93c3da03155e/cb75d/placeholder.svg',
+  filename: '/app/webapp/builds/810e99406900243e3ac32d3087be93c3da03155e/cb75d/placeholder.svg'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 517 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/7b6d7a3304f48c3bf3aade9936eeff3d292ff685/38eae/placeholder.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/7b6d7a3304f48c3bf3aade9936eeff3d292ff685/38eae/placeholder.svg',
+  filename: '/app/webapp/builds/7b6d7a3304f48c3bf3aade9936eeff3d292ff685/38eae/placeholder.svg'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 518 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/7b6d7a3304f48c3bf3aade9936eeff3d292ff685/38eae/placeholder.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/7b6d7a3304f48c3bf3aade9936eeff3d292ff685/38eae/placeholder.svg',
+  filename: '/app/webapp/builds/7b6d7a3304f48c3bf3aade9936eeff3d292ff685/38eae/placeholder.svg'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 701 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/772bae9efb4fddc928ea8dd406bc9ca600efa1f3/b642b/robots.txt'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/772bae9efb4fddc928ea8dd406bc9ca600efa1f3/b642b/robots.txt',
+  filename: '/app/webapp/builds/772bae9efb4fddc928ea8dd406bc9ca600efa1f3/b642b/robots.txt'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 629 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/772bae9efb4fddc928ea8dd406bc9ca600efa1f3/b642b/robots.txt'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/772bae9efb4fddc928ea8dd406bc9ca600efa1f3/b642b/robots.txt',
+  filename: '/app/webapp/builds/772bae9efb4fddc928ea8dd406bc9ca600efa1f3/b642b/robots.txt'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 602 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/757974c65649619ac2287c6c79df2edb610845be/e2d80/favicon.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/757974c65649619ac2287c6c79df2edb610845be/e2d80/favicon.svg',
+  filename: '/app/webapp/builds/757974c65649619ac2287c6c79df2edb610845be/e2d80/favicon.svg'
+}
+
+Node.js v20.20.0
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 507 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.142.130:5173/
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/app/webapp/builds/757974c65649619ac2287c6c79df2edb610845be/e2d80/favicon.svg'
+    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)
+    at Object.watch (node:fs:2503:36)
+    at createFsWatchInstance (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42780:17)
+    at setFsWatchListener (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42827:15)
+    at NodeFsHandler._watchWithNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:42982:14)
+    at NodeFsHandler._handleFile (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43046:23)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43288:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:44481:10)
+    at NodeFsHandler._addToNodeFs (file:///app/webapp/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:43296:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/app/webapp/builds/757974c65649619ac2287c6c79df2edb610845be/e2d80/favicon.svg',
+  filename: '/app/webapp/builds/757974c65649619ac2287c6c79df2edb610845be/e2d80/favicon.svg'
+}
+
+Node.js v20.20.0
