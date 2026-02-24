@@ -4,7 +4,7 @@ const PLACEHOLDER_IMG = "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17
 
 const videos = [
   { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", preview: PLACEHOLDER_IMG, title: "Видео 1" },
-  { id: 2, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 2" },
+  { id: 2, embedUrl: "https://rutube.ru/play/embed/424d4167920f5db8fbbc3b2bc2693f09/?p=-Cp0X4qCCRwU5PKLqVrmWw", preview: PLACEHOLDER_IMG, title: "Видео 2" },
   { id: 3, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 3" },
   { id: 4, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 4" },
   { id: 5, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 5" },
