@@ -72,7 +72,7 @@ export function Projects() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Портфолио событий</h2>
           </div>
           <a
-            href="#"
+            href="/portfolio"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
           >
             Смотреть все события
