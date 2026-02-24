@@ -1,5 +1,5 @@
 const videos = [
-  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", title: "Видео 1" },
+  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ&autoplay=1&mute=1", title: "Видео 1" },
   { id: 2, embedUrl: "", title: "Видео 2" },
   { id: 3, embedUrl: "", title: "Видео 3" },
   { id: 4, embedUrl: "", title: "Видео 4" },
