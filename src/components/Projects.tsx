@@ -8,7 +8,9 @@ const projects = [
     category: "Корпоратив",
     location: "Проведение и организация",
     year: "2025",
-    image: "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/9ddcbb27-c323-42f0-8201-a4c6bdf4a111.png",
+    images: [
+      "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/9ddcbb27-c323-42f0-8201-a4c6bdf4a111.png",
+    ],
   },
   {
     id: 2,
@@ -16,7 +18,7 @@ const projects = [
     category: "Корпоратив",
     location: "Петропавловск-Камчатский",
     year: "2024",
-    image: "/images/hously-2.png",
+    images: ["/images/hously-2.png"],
   },
   {
     id: 3,
@@ -24,7 +26,7 @@ const projects = [
     category: "Частное торжество",
     location: "Камчатка, Авачинский вулкан",
     year: "2023",
-    image: "/images/hously-3.png",
+    images: ["/images/hously-3.png"],
   },
   {
     id: 4,
@@ -32,12 +34,79 @@ const projects = [
     category: "Деловое мероприятие",
     location: "Петропавловск-Камчатский, «Яранга»",
     year: "2024",
-    image: "/images/hously-4.png",
+    images: ["/images/hously-4.png"],
   },
 ]
 
+function ProjectCard({ project, revealed }: { project: typeof projects[0]; revealed: boolean }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [hovered, setHovered] = useState(false)
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  useEffect(() => {
+    if (hovered && project.images.length > 1) {
+      intervalRef.current = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % project.images.length)
+      }, 1000)
+    } else {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+      if (!hovered) setCurrentIndex(0)
+    }
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current) }
+  }, [hovered, project.images.length])
+
+  return (
+    <article
+      className="group cursor-pointer"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className="relative overflow-hidden aspect-[4/3] mb-6">
+        {project.images.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt={project.title}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
+              i === currentIndex ? "opacity-100 scale-105" : "opacity-0 scale-100"
+            }`}
+          />
+        ))}
+        {project.images.length > 1 && hovered && (
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+            {project.images.map((_, i) => (
+              <div
+                key={i}
+                className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${
+                  i === currentIndex ? "bg-white" : "bg-white/40"
+                }`}
+              />
+            ))}
+          </div>
+        )}
+        <div
+          className="absolute inset-0 bg-primary origin-top z-20"
+          style={{
+            transform: revealed ? "scaleY(0)" : "scaleY(1)",
+            transition: "transform 1.5s cubic-bezier(0.76, 0, 0.24, 1)",
+          }}
+        />
+      </div>
+
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h3 className="text-xl font-medium mb-2 group-hover:underline underline-offset-4">{project.title}</h3>
+          <p className="text-muted-foreground text-sm">
+            {project.category} · {project.location}
+          </p>
+        </div>
+        <span className="text-muted-foreground/60 text-sm">{project.year}</span>
+      </div>
+    </article>
+  )
+}
+
 export function Projects() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null)
   const [revealedImages, setRevealedImages] = useState<Set<number>>(new Set())
   const imageRefs = useRef<(HTMLDivElement | null)[]>([])
 
@@ -82,39 +151,9 @@ export function Projects() {
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <article
-              key={project.id}
-              className="group cursor-pointer"
-              onMouseEnter={() => setHoveredId(project.id)}
-              onMouseLeave={() => setHoveredId(null)}
-            >
-              <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className={`w-full h-full object-cover transition-transform duration-700 ${
-                    hoveredId === project.id ? "scale-105" : "scale-100"
-                  }`}
-                />
-                <div
-                  className="absolute inset-0 bg-primary origin-top"
-                  style={{
-                    transform: revealedImages.has(project.id) ? "scaleY(0)" : "scaleY(1)",
-                    transition: "transform 1.5s cubic-bezier(0.76, 0, 0.24, 1)",
-                  }}
-                />
-              </div>
-
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-xl font-medium mb-2 group-hover:underline underline-offset-4">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm">
-                    {project.category} · {project.location}
-                  </p>
-                </div>
-                <span className="text-muted-foreground/60 text-sm">{project.year}</span>
-              </div>
-            </article>
+            <div key={project.id} ref={(el) => (imageRefs.current[index] = el)}>
+              <ProjectCard project={project} revealed={revealedImages.has(project.id)} />
+            </div>
           ))}
         </div>
       </div>
