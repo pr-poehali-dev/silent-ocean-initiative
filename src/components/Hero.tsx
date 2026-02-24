@@ -122,7 +122,7 @@ export function Hero() {
         <img
           src="https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/685ca029-9228-476c-89aa-a515da2453ab.png"
           alt="Атмосферное event-пространство"
-          className="w-full h-full object-cover object-[60%_center]"
+          className="w-full h-full object-cover object-[50%_center]"
         />
       </div>
 
