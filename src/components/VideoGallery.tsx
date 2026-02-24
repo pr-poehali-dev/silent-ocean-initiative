@@ -3,7 +3,7 @@ import { useState } from "react"
 const PLACEHOLDER_IMG = "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/files/d827f607-f40a-4fc7-84b2-a4072006bfae.jpg"
 
 const videos = [
-  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", preview: "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/9ddcbb27-c323-42f0-8201-a4c6bdf4a111.png", title: "Видео 1" },
+  { id: 1, embedUrl: "https://rutube.ru/play/embed/17c43a0051dde934b7398721fec34bf6/?p=4FDxBUOkBsNtDh7_JYonGQ", preview: "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/d6be3042-5e2c-485c-a6b1-b80a28e6a126.jpg", title: "Видео 1" },
   { id: 2, embedUrl: "https://rutube.ru/play/embed/424d4167920f5db8fbbc3b2bc2693f09/?p=-Cp0X4qCCRwU5PKLqVrmWw", preview: "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/61f902d3-b403-4d48-b497-25e2c9d189e9.png", title: "Видео 2" },
   { id: 3, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 3" },
   { id: 4, embedUrl: "", preview: PLACEHOLDER_IMG, title: "Видео 4" },
