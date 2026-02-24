@@ -21,6 +21,17 @@ export function Header() {
     setMobileMenuOpen(false)
   }
 
+  const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, hash: string) => {
+    e.preventDefault()
+    closeMobileMenu()
+    if (isHome) {
+      const el = document.querySelector(hash)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+    } else {
+      window.location.href = `/${hash}`
+    }
+  }
+
   const scrollToTop = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     window.scrollTo({ top: 0, behavior: "smooth" })
@@ -55,6 +66,7 @@ export function Header() {
             <li key={item.label}>
               <a
                 href={`${prefix}${item.href}`}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="hover:text-[rgb(251,146,60)] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-[rgb(251,146,60)] after:transition-all after:duration-300 text-white"
               >
                 {item.label}
@@ -114,7 +126,7 @@ export function Header() {
                 <a
                   href={`${prefix}${item.href}`}
                   className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-4xl font-light block"
-                  onClick={closeMobileMenu}
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.label}
                 </a>
