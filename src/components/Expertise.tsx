@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { Heart, Building2, PartyPopper, Mic } from "lucide-react"
+import { Heart, Building2, PartyPopper, Mic, Users, Briefcase } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
@@ -25,6 +25,24 @@ const expertiseAreas = [
     description:
       "Презентации, пресс-конференции, запуск продуктов и бизнес-завтраки. Профессиональная организация с вниманием к имиджу.",
     icon: Mic,
+  },
+  {
+    title: "Корпоративы без ограничений",
+    description:
+      "Организация корпоративных мероприятий любого масштаба — без ограничений по количеству гостей. Тимбилдинги, гала-вечера, праздники для всей компании под ключ.",
+    icon: Users,
+  },
+  {
+    title: "Бизнес-форумы",
+    description:
+      "Организация и проведение бизнес-форумов: пространство, программа, спикеры, техническое обеспечение. Создаём площадку, где рождаются идеи и партнёрства.",
+    icon: Briefcase,
+  },
+  {
+    title: "Свадьбы на краю света",
+    description:
+      "Проведение и организация свадеб на вулкане или берегу Тихого океана. Уникальные локации Камчатки как фон для самого важного дня в вашей жизни.",
+    icon: Heart,
   },
 ]
 
