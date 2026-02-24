@@ -8,7 +8,7 @@ const projects = [
     category: "Корпоратив",
     location: "Проведение и организация",
     year: "2025",
-    image: "/images/hously-1.png",
+    image: "https://cdn.poehali.dev/projects/19089321-baea-4afd-b17d-4ea2719a588d/bucket/9ddcbb27-c323-42f0-8201-a4c6bdf4a111.png",
   },
   {
     id: 2,
