@@ -20,7 +20,7 @@ export function LaraAbout() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О нас</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">
+          <h2 className="md:text-4xl lg:text-5xl font-medium tracking-tight text-4xl">
             Лара Даманская, <HighlightedText>кто она?</HighlightedText>
           </h2>
         </div>
